@@ -42,6 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  border: solid 1px var(--grey-950);
 }
 
 .card-header img {
