@@ -32,7 +32,7 @@ Before you begin, ensure you have the following tools installed:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/blog-preview-card.git
+   git clone https://github.com/mariokreitz/blog-preview-card.git
    ```
 
 2. **Navigate to the project directory:**
