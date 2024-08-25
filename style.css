@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "figtree-exta-bold";
+  src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "figtree-medium";
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+}
+
+:root {
+  --yellow: #f4d04e;
+  --grey-950: #111111;
+  --grey-500: #6b6b6b;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--yellow);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--white);
+  width: 384px;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 8px 8px 0 0 black;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-header img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.color-grey {
+  color: var(--grey-500) !important;
+}
+
+.card-body p,
+h1 {
+  color: var(--grey-950);
+}
+
+.tag {
+  padding: 4px 12px;
+  background-color: var(--yellow);
+  width: fit-content;
+  border-radius: 4px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 32px;
+}
+
+.card-footer img {
+  height: 100%;
+}
+
+.card-footer span {
+  color: var(--grey-950);
+}
+
+.main-heading:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.figtree-exta-bold-1 {
+  font-family: "figtree-exta-bold";
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.figtree-exta-bold-2 {
+  font-family: "figtree-exta-bold";
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.figtree-medium-1 {
+  font-family: "figtree-medium";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.figtree-medium-2 {
+  font-family: "figtree-medium";
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+
+@media (max-width: 376px) {
+  .card {
+    width: 327px;
+  }
+}
+
+@media (max-width: 433px) {
+  .container {
+    padding-inline: 24px;
+  }
+}
